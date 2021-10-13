@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="style/Login.css" />
     <link rel="stylesheet" href="style/Navbar.css" />
     <link rel="stylesheet" href="style/footer.css" />
-    <link rel="stylesheet" href="style/home.css" />
+    <!-- <link rel="stylesheet" href="style/home.css" /> -->
 
     <style>
       nav{
@@ -39,6 +39,82 @@
         /* margin-top: -44px; */
       }
     </style>
+    <style>
+      *{
+          font-family: "Noto Sans JP", sans-serif;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      .hover{
+          /* background-color: rgb(245, 67, 245); */
+      }
+      nav{
+          z-index: 10;
+          background-color: transparent;
+      }
+      
+      .container{
+          background-image: url('PNG2/4.png');
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          /* border: 2px solid red; */
+          /* z-index: -3; */
+          width: 100vw;
+          height: 100vh;
+          overflow: hidden;
+          background-color: transparent;
+          display: flex;
+          flex-direction: row;
+          /* border: 2px solid green; */
+      }
+      .box-1s{
+          z-index: 1;
+          width: 50%;
+          height: 100%;
+          /* background-color: red; */
+          /* border: 2px solid red; */
+      }
+      .content{
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          /* border: 2px solid red; */
+          width: 60%;
+          height: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          
+      }
+      .content h1{
+          font-size: 3em;
+      }
+      .content p{
+          font-size: 1em;
+      }
+      .btnz
+      .box-2s{
+          z-index: 1;
+          width: 50%;
+          height: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+      }
+      .a{
+          /* border: 2px solid red; */
+          width: 100px;
+          height: 1000px;
+      }
+      .btn-mains{
+          width: 40%;
+          background-color: white;
+          box-shadow: 0px 0px 0px 1px black;
+      }
+  </style>
   </head>
   <body>
 
@@ -72,11 +148,25 @@
             <div href="" id="homelogin" class="hover">Login</div>
           </div>
       </nav>
-      <div class="welcome-text">
-          <h1>
-              Welcome to <br><span>DAC-A</span></h1>
-          <a href="card.html" id="mainbtn">Questions &rarr;</a>
-      </div>
+      <div class="container">
+        <div class="box-1s">
+
+            <div class="content">
+                <h1>Go from questioning<br> to understanding</h1>
+                <p>DAC-A is the knowledge-sharing community where 4 students have put their heads together to develope their toughest homework.</p>
+                <div class="btnz">
+                    <a class="hover btn-mains">Ask Question</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="tilt"></div> -->
+        <div class="box-2s">
+            <!-- <img class="imgs2" src="PNG/02-10C-valentines-Lock.png" alt="">
+            <img class="imgs3" src="PNG/09-10C-valentines-Envelope.png" alt="">
+            <img class="imgs4" src="PNG/12-10C-valentines-Calendar.png" alt="">
+            <img class="imge1" src="PNG2/Richie_3.png" alt=""> -->
+        </div>
+    </div>
       <footer>
         <div class="main">
           <img src="style/img.jpg" alt="" />
